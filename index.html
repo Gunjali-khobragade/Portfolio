@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        :root{
+  --bg:#0b0f1a;
+  --card:rgba(255,255,255,0.08);
+  --border:rgba(255,255,255,0.15);
+  --text:#b1c0dc;
+  --muted:#94a3b8;
+  --accent1:#b08eeb;
+  --accent2:#530edc;
+    --accent3:#22d3ee;
+}
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+header{
+background: linear-gradient(135deg, #1e1b4b,#020617);
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+}
+header h1{
+    background:linear-gradient(90deg,var(--accent1),var(--accent2));
+    -webkit-background-clip:text;
+    color:transparent
+}
+header p{
+    font-size: 18px;
+    opacity: 0.9;
+    background:linear-gradient(90deg,var(--accent3));
+    -webkit-background-clip: text;
+color:transparent
+}
+nav {
+      background: #1a506f;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: #c7d2fe;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav h1{
+      margin-right: 50px;
+      color: white;
+    }
+    nav a:hover {
+      color: #3c2b6d;
+    }
+     /* Section Styles */
+      section{
+        padding: 60px 20px;
+        max-width: 1100px;
+        margin: auto;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        /* About Section */
+          #about {
+            background: #c9d0d8;
+        }
+        .about-content {
+     
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 50%;
+            box-shadow: 0 10px 30px rgba(15, 0, 0, 0.2);
+        }
+        .about-text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+         /* Skills Section */
+        #skills {
+            background: #e7ebef;
+        }
+           .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .skill-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow:  5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+         .skill-card:hover {
+            transform: translateY(-10px);
+        }
+         .skill-card h3 {
+            color: #22d3ee;
+        }
+
+  /* Projects Section */
+        #projects {
+            background: #c9d0d8;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #878ce2 0%, #323f4d 100%);
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-card h3 {
+            color:  #1b0b41;
+            margin-bottom: 1rem;
+        }
+
+
+
+
+
+        /* Contact Section */
+        #contact {
+            background: #2c3e50;
+            color: #fff;
+        }
+
+        #contact h2 {
+            color: #fff;
+        }
+
+        .contact p {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .contact-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            text-align:center;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .contact-links a:hover {
+            background: #fff;
+            color: #2c3e50;
+        }
+   
+/* Footer Section */
+
+   footer {
+      background: #020617;
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+      margin-top: 40px;
+    }
+   </style>
+</head>
+<body>
+
+     <!-- nav -->
+       <nav>
+                    <h1>My Portfolio</h1>
+   <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+
+    <!-- header -->    <header>
+        <h1> Hi, I'm ATHARVA BAHAKAR</h1>
+        <P> Creater | Developer | Designer</P>
+    
+    </header>
+
+  <!-- About Section -->
+
+ <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="atharv.jpg " alt="Profile Picture">
+            </div>
+            <div class="about-text">
+<p>
+I am a passionate developer who enjoys building clean, practical, and user-friendly digital solutions. Through hands-on coding practice, virtual internships, and personal projects, I have gained a strong understanding of how real-world applications are designed and developed.
+</p>
+
+<p>
+I enjoy exploring new technologies, improving my problem-solving skills, and continuously learning to become better at what I do. My aim is to grow as a developer, work on impactful projects, and collaborate with teams that use technology to create meaningful solutions.
+</p>            </div>
+        </div>
+    </section>
+
+   <!-- Skill Section-->
+
+ <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Frontend Development</h3>
+                <p>HTML5, CSS3, JavaScript, React, Vue.js, Responsive Design</p>
+            </div>
+            <div class="skill-card">
+                <h3>Backend Development</h3>
+                <p>Node.js, Python, Database Management, API Development</p>
+            </div>
+            <div class="skill-card">
+                <h3>Design</h3>
+                <p>UI/UX Design,  Figma, Canva</p>
+            </div>
+            <div class="skill-card">
+                <h3>Tools & Technologies</h3>
+                <p>Git Hub, Matlab</p>
+            </div>
+        </div>
+    </section> 
+
+
+  <!-- Project Section -->
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+         <div class="project-card">
+            <h3>QuickKart</h3>
+<p>
+QuickKart is an e-commerce web application created to provide a fast and smooth online shopping experience. Users can explore products, manage their cart, and place orders easily through a clean and efficient interface. The project emphasizes simplicity, speed, and organized product handling.
+</p>            </div>
+
+            <div class="project-card">
+            <h3>IoT-Powered Gas Leakage Alert and Industrial Safety System</h3>
+            <p>
+This project is a real-time IoT-based safety solution designed to monitor hazardous gases and environmental conditions in industrial areas. The system provides instant alerts and triggers safety actions whenever gas levels exceed safe limits, helping to reduce risks and improve workplace safety.
+</p>
+
+            </div>
+
+            <div class="project-card">
+            <h3>Gityam Music App</h3>   
+<p>
+Gityam is a web-based music streaming application focused on personalized listening. It offers mood-based song recommendations and an easy-to-navigate interface for exploring playlists, albums, and genres. The project aims to deliver a smooth and enjoyable music experience for users.
+</p>
+            </p>
+            </div>
+         </div>
+</section>  
+         <!-- Contact Section -->
+
+    <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+              <div class="contact-links">
+                <a href="atharvarbahakar@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/atharva-bahakar-4a9737257" target="_blank">LinkedIn</a>
+                <a href="https://github.com/AtharvaBahakar" target="_blank">GitHub</a>
+                <a href="9322588910" target="_blank">Contact</a>
+            </div>        
+</section>
+
+<!-- footer -->
+<footer>
+    <p>© 2025 Atharva Bahakar. All Rights Reserved.</p>
+</footer> 
+</body>
+</html>
